@@ -4,7 +4,7 @@
         "version": "PLCN_v3",
         "update_url": null
     },
-    "exported_at": "2026-04-16T17:21:52+00:00",
+    "exported_at": "2026-04-16T17:30:09+00:00",
     "name": "Unreal Tournament 2004 (OldUnreal)",
     "author": "contact@rubberverse.xyz",
     "uuid": "ab1d65a3-89dc-4c25-9cde-25e088d06bd8",
@@ -64,8 +64,8 @@
             "description": "What port to run server on? Query Port will be +1 of this value and GameSpy Query port will be +10 of this value. Protocol: UDP",
             "env_variable": "GAME_PORT",
             "default_value": "7777",
-            "user_viewable": true,
-            "user_editable": true,
+            "user_viewable": false,
+            "user_editable": false,
             "rules": [
                 "required",
                 "between:1024,65535",
@@ -117,8 +117,8 @@
             "description": "Port for WebAdmin to listen on. Protocol: TCP (HTTP)",
             "env_variable": "WEBADMIN_PORT",
             "default_value": "9000",
-            "user_viewable": true,
-            "user_editable": true,
+            "user_viewable": false,
+            "user_editable": false,
             "rules": [
                 "required",
                 "between:1024,65535",

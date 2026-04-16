@@ -32,6 +32,8 @@
 ################################################################
 GAMEDIR=/home/container
 INIFILE=${GAMEDIR}/System/UT2004.ini
-echo "Starting ut2004 server"
+echo "Modifying ListenPort for WebAdmin"
+sed -i "s/^ListenPort=.*/ListenPort=${WEBADMIN_PORT}/" UT2004.ini
+echo "Starting UT2004 server"
 cd ./System/
 ./ucc-bin server "${MAP_NAME}?game=${GAMEMODE}?AdminName=${ADMIN_USERNAME}?AdminPassword=${ADMIN_PASSWORD}?Mutator=${MUTATORS}?GamePassword=${GAME_PASSWORD}" -ini="${INIFILE}" -nohomedir -port="${GAME_PORT}"

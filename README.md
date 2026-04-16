@@ -24,7 +24,7 @@ It's basically like running your own game hosting at home. A lot of smaller and 
 
 I've been dying to play some good arena shooter for a while now. After looking through my search engine of choice - DuckDuckGo - I didn't find anything that *worked* for me. These eggs were outdated, were relying on somebody else hosting the download on Google Drive and others just relied on the very outdated version of UT2004 for their server needs. I was bored out of my mind so I decided to say fuck it, how hard may it be?
 
-Few hours later I was spinning up my own yolks for this, they can be found [in this repository]() and writing a whole ass install script. It's just time consuming if anything.
+Few hours later I was spinning up my own yolks for this, they can be found [in this repository](https://github.com/MrRubberDucky/yolks/tree/main) and writing a whole ass install script. It's just time consuming if anything.
 
 Here I bring you: UT2004 server egg with all the bells and whistles. It makes use of a modified OldUnreal's project install script which handles installing latest game version and patching it, then makes use of my rather simple Debian Trixie runner image to run on, which is pinned against short SHA256 commit. Server starts, runs, properly reports as Running in the dashboard and well it's just UT2004 server, rest is up to you to change.
 

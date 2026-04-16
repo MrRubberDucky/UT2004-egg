@@ -1692,9 +1692,6 @@ __step::eula::text() {
     echo
     echo "By using this egg and running this script, you acknowledge and accept Epic Games Terms of Service agreement."
     echo
-    echo "Auto-accepting Epic Games Terms of Service for automated installation."
-    echo "By running this script, you acknowledge and accept the Epic Games TOS."
-    echo
     term::step::new "Terms of Service"
     term::step::complete
 }

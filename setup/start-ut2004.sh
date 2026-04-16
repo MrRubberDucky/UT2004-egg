@@ -42,11 +42,12 @@
 #
 GAMEDIR=/home/container
 INIFILE=${GAMEDIR}/System/UT2004.ini
-MULTIHOME='multihome='${2}
-PORT='Port='${3}
-GAMEPASSWORD='GamePassword='${4}
-ADMINNAME='AdminName='${5}
-ADMINPASS='AdminPassword='${6}
+MUTATORS='Mutator='${MUTATORS}
+MULTIHOME='multihome='${MULTIHOME}
+PORT='Port='${GAME_PORT}
+GAMEPASSWORD='GamePassword='${GAME_PASSWORD}
+ADMINNAME='AdminName='${ADMIN_USERNAME}
+ADMINPASS='AdminPassword='${ADMIN_PASSWORD}
 #
 #
 # Game types which are used by this script.  Change as desired, but be
@@ -62,12 +63,6 @@ ASSAULT='DM-Antalus?UT2K4Assault.ASGameInfo'
 DOUBLEDOM='DOM-SunTemple?game=xGame.xDoubleDom'
 MUTANT='DM-Morpheus3?game=BonusPack.xMutantGame'
 CTF='CTF-Orbital2?game=XGame.xCTFGame'
-
-#
-# Set your Mutators
-# 
-MUTATORS='Mutator=XGame.MutFastWeapSwitch'
-
 #
 # Files.
 #
@@ -78,12 +73,10 @@ RLOG=${GAMEDIR}/ut2004-restart.log
 SLOG=ut2004-server.log
 CACHERECORD=${GAMEDIR}/System/CacheRecords.ucl
 CACHEBACKUP=${GAMEDIR}/System/CacheRecords.bak
-
 # How many times to loop & restart if the server dies.  To disable looping,
 # set this to 1.
 #
 LOOPS=4
-
 #
 # Check for one command line argument, which is a gametype.
 #

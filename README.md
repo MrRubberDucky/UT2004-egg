@@ -29,3 +29,13 @@ Few hours later I was spinning up my own yolks for this, they can be found [in t
 Here I bring you: UT2004 server egg with all the bells and whistles. It makes use of a modified OldUnreal's project install script which handles installing latest game version and patching it, then makes use of my rather simple Debian Trixie runner image to run on, which is pinned against short SHA256 commit. Server starts, runs, properly reports as Running in the dashboard and well it's just UT2004 server, rest is up to you to change.
 
 I didn't wanna offload thousand of variables for you to change within dashboard so for anything more advanced, dive into `System/UT2004.ini` and modify it to your liking.
+
+## Ports
+
+You can change game and webadmin port to be anything you want. I'll use 7777/udp as my example. Query & GameSpy query get calculated from following formula: `{{GAME_PORT}}+1=Query`, `{{GAME_PORT}}+10=GameSpy_Query`
+
+- 7777/udp - Game
+- 7778/udp - Query
+- 7787/udp - GameSpy Query
+- 9000/tcp - WebAdmin (XAdmin)
+- 28902/udp - Connection to Master Server(s), needs to be manually configured in `UT2004.ini`

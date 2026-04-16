@@ -2,9 +2,9 @@
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PANEL",
     "meta": {
         "version": "PLCN_v3",
-        "update_url": null
+        "update_url": "https://raw.githubusercontent.com/MrRubberDucky/UT2004-egg/refs/heads/main/egg-unreal-tournament2004-old-unreal.json"
     },
-    "exported_at": "2026-04-16T18:48:36+00:00",
+    "exported_at": "2026-04-16T18:51:54+00:00",
     "name": "Unreal Tournament 2004 (OldUnreal)",
     "author": "contact@rubberverse.xyz",
     "uuid": "ab1d65a3-89dc-4c25-9cde-25e088d06bd8",
